@@ -3,16 +3,28 @@
 ## Task 1: Physical Units and Quantities System
 
 ### Acceptance Criteria
-- [ ] Dimension class tracks 7 SI base dimensions (length, mass, time, current, temperature, amount, luminosity)
-- [ ] Quantity class stores numeric value with associated dimensions
-- [ ] Creating 5 * second gives a Quantity with value 5.0 and time dimension 1
-- [ ] 500 * millisecond equals 0.5 when expressed in seconds
-- [ ] Adding 1 * second + 500 * millisecond gives Quantity with value 1.5 seconds
-- [ ] Adding quantities with mismatched dimensions raises DimensionMismatchError
-- [ ] Multiplying quantities multiplies values and adds dimensions (e.g., amp * second = coulomb dimensions)
-- [ ] Dividing quantities divides values and subtracts dimensions
-- [ ] Quantities support numpy array operations (array of values with same dimension)
-- [ ] Unit class represents a unit with a scale factor and dimension
-- [ ] Dimensionless quantities work correctly (e.g., ratios)
-- [ ] Power operations work (e.g., meter**2 gives area dimensions)
-- [ ] Comparison operations work between same-dimension quantities
+- [x] Dimension class tracks 7 SI base dimensions (length, mass, time, current, temperature, amount, luminosity)
+- [x] Quantity class stores numeric value with associated dimensions
+- [x] Creating 5 * second gives a Quantity with value 5.0 and time dimension 1
+- [x] 500 * millisecond equals 0.5 when expressed in seconds
+- [x] Adding 1 * second + 500 * millisecond gives Quantity with value 1.5 seconds
+- [x] Adding quantities with mismatched dimensions raises DimensionMismatchError
+- [x] Multiplying quantities multiplies values and adds dimensions (e.g., amp * second = coulomb dimensions)
+- [x] Dividing quantities divides values and subtracts dimensions
+- [x] Quantities support numpy array operations (array of values with same dimension)
+- [x] Unit class represents a unit with a scale factor and dimension
+- [x] Dimensionless quantities work correctly (e.g., ratios)
+- [x] Power operations work (e.g., meter**2 gives area dimensions)
+- [x] Comparison operations work between same-dimension quantities
+
+## Task 2: Standard Units with SI Prefixes
+
+### Acceptance Criteria
+- [ ] SI prefixes are available for all base units (milli, micro, nano, pico, kilo, mega, giga, etc.)
+- [ ] Common neuroscience units available: mvolt (millivolt), msecond (millisecond), namp (nanoamp), nsiemens, etc.
+- [ ] Short aliases work: ms for millisecond, mV for millivolt, nA for nanoamp, Hz for hertz
+- [ ] 1000 * msecond equals 1 * second
+- [ ] 1 * mvolt equals 0.001 * volt
+- [ ] Physical constants available: electron charge, Boltzmann constant
+- [ ] Area and volume units work: cm (centimeter), um (micrometer), cm2, um2
+- [ ] All standard neuroscience prefixed units can be imported
