@@ -72,3 +72,15 @@
 - [x] Network.stop() halts the simulation
 - [x] before_run and after_run lifecycle methods are called on objects
 - [x] Inactive objects are not updated during simulation
+
+## Task 7: Equation Parsing
+
+### Acceptance Criteria
+- [x] Equations can be created from multi-line strings
+- [x] Differential equations parsed: "dv/dt = -v/tau : volt"
+- [x] Subexpressions (aliases) parsed: "v_total = v + v_rest : volt"
+- [x] Parameters parsed: "tau : second"
+- [x] Variables have associated units/dimensions
+- [x] Expression objects store the right-hand side with identifiers
+- [x] Equations container provides access by variable name
+- [x] Invalid equation syntax raises EquationError

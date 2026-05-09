@@ -41,3 +41,10 @@
 **Commit**: Add Network class for managing simulation runs with scheduling and time tracking
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for Network), PASS on current state
+
+## Round 7
+**Task**: Task 7 — Implement equation parsing
+**Files created**: neurosim/equations/__init__.py, neurosim/equations/equations.py, tests/test_equations.py
+**Commit**: Add equation parsing for differential equations, parameters, and subexpressions
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for equations module), PASS on current state
