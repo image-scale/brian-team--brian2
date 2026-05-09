@@ -32,9 +32,21 @@
 ## Task 3: Logging and Preference System
 
 ### Acceptance Criteria
-- [ ] Logger can be created with different levels (DEBUG, INFO, WARNING, ERROR)
-- [ ] Log messages include module name and timestamp
-- [ ] Preferences can be registered with defaults, types, and documentation
-- [ ] Preferences can be read and modified at runtime
-- [ ] Invalid preference values raise appropriate errors
-- [ ] Preference system supports nested namespaces (e.g., core.network.schedule)
+- [x] Logger can be created with different levels (DEBUG, INFO, WARNING, ERROR)
+- [x] Log messages include module name and timestamp
+- [x] Preferences can be registered with defaults, types, and documentation
+- [x] Preferences can be read and modified at runtime
+- [x] Invalid preference values raise appropriate errors
+- [x] Preference system supports nested namespaces (e.g., core.network.schedule)
+
+## Task 4: Simulation Clocks
+
+### Acceptance Criteria
+- [ ] Clock tracks current time and timestep number
+- [ ] Clock has configurable dt (time step size) defaulting to 0.1 ms
+- [ ] Clock can advance time by one dt and increment timestep
+- [ ] Clock can be set to run from start time to end time
+- [ ] Clock raises StopIteration when end time is reached
+- [ ] A global defaultclock is available for convenience
+- [ ] Multiple clocks can coexist with different dt values
+- [ ] Clock time has proper units (seconds)

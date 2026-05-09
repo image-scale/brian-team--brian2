@@ -13,3 +13,10 @@
 **Commit**: Add standard units with SI prefixes commonly used in neuroscience
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for msecond), PASS on current state
+
+## Round 3
+**Task**: Task 3 — Implement the logging and preference system
+**Files created**: neurosim/utils/__init__.py, neurosim/utils/logger.py, neurosim/utils/preferences.py, neurosim/core/__init__.py, tests/test_utils.py
+**Commit**: Add a logging and preferences system for configuring simulator behavior
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError for neurosim.utils), PASS on current state
