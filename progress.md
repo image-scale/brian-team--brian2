@@ -62,3 +62,10 @@
 **Commit**: Add Group base class with state variable access, attribute access, and indexing
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for groups), PASS on current state
+
+## Round 10
+**Task**: Task 10 — Implement NeuronGroup with differential equations and spiking
+**Files created**: neurosim/groups/neurongroup.py, tests/test_neurongroup.py
+**Commit**: Add NeuronGroup with differential equations, thresholds, resets, and refractory periods
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for NeuronGroup), PASS on current state

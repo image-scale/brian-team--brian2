@@ -108,3 +108,15 @@
 - [x] Variables created from equations
 - [x] Unit checking on variable assignment
 - [x] Read-only variables cannot be set via attribute
+
+## Task 10: NeuronGroup
+
+### Acceptance Criteria
+- [x] NeuronGroup extends Group with neuron-specific behavior
+- [x] Threshold condition specifies when neurons spike (e.g., "v > -50*mV")
+- [x] Reset expression specifies what happens after a spike (e.g., "v = -70*mV")
+- [x] Differential equations are integrated using Euler method
+- [x] Spike times are tracked via last_spike variable
+- [x] Refractory period prevents spiking for a specified duration
+- [x] Method parameter selects integration method (default 'euler')
+- [x] NeuronGroup participates in network simulation with proper scheduling
