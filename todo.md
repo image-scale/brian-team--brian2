@@ -4,7 +4,7 @@
 Implement the neural simulator in dependency order. Start with the units system which is foundational, then clocks and simulation framework, then neuron groups with equations, then synapses and monitors, finally input generators. Each task delivers a complete feature with tests.
 
 ## Tasks
-- [ ] Task 1: Implement the physical units and quantities system with dimension tracking, arithmetic operations, and unit checking (units module + tests)
+- [>] Task 1: Implement the physical units and quantities system with dimension tracking, arithmetic operations, and unit checking (units module + tests)
 - [ ] Task 2: Implement standard units like millivolt, millisecond, nanoamp and physical constants (standard units + tests)
 - [ ] Task 3: Implement the logging and preference system for configuration (utils + tests)
 - [ ] Task 4: Implement simulation clocks that manage time stepping with a default clock (clocks + tests)
