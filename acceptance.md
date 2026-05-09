@@ -20,11 +20,21 @@
 ## Task 2: Standard Units with SI Prefixes
 
 ### Acceptance Criteria
-- [ ] SI prefixes are available for all base units (milli, micro, nano, pico, kilo, mega, giga, etc.)
-- [ ] Common neuroscience units available: mvolt (millivolt), msecond (millisecond), namp (nanoamp), nsiemens, etc.
-- [ ] Short aliases work: ms for millisecond, mV for millivolt, nA for nanoamp, Hz for hertz
-- [ ] 1000 * msecond equals 1 * second
-- [ ] 1 * mvolt equals 0.001 * volt
-- [ ] Physical constants available: electron charge, Boltzmann constant
-- [ ] Area and volume units work: cm (centimeter), um (micrometer), cm2, um2
-- [ ] All standard neuroscience prefixed units can be imported
+- [x] SI prefixes are available for all base units (milli, micro, nano, pico, kilo, mega, giga, etc.)
+- [x] Common neuroscience units available: mvolt (millivolt), msecond (millisecond), namp (nanoamp), nsiemens, etc.
+- [x] Short aliases work: ms for millisecond, mV for millivolt, nA for nanoamp, Hz for hertz
+- [x] 1000 * msecond equals 1 * second
+- [x] 1 * mvolt equals 0.001 * volt
+- [x] Physical constants available: electron charge, Boltzmann constant
+- [x] Area and volume units work: cm (centimeter), um (micrometer), cm2, um2
+- [x] All standard neuroscience prefixed units can be imported
+
+## Task 3: Logging and Preference System
+
+### Acceptance Criteria
+- [ ] Logger can be created with different levels (DEBUG, INFO, WARNING, ERROR)
+- [ ] Log messages include module name and timestamp
+- [ ] Preferences can be registered with defaults, types, and documentation
+- [ ] Preferences can be read and modified at runtime
+- [ ] Invalid preference values raise appropriate errors
+- [ ] Preference system supports nested namespaces (e.g., core.network.schedule)
