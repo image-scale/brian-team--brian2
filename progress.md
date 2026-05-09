@@ -69,3 +69,10 @@
 **Commit**: Add NeuronGroup with differential equations, thresholds, resets, and refractory periods
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for NeuronGroup), PASS on current state
+
+## Round 11
+**Task**: Task 11 — Implement spike monitoring
+**Files created**: neurosim/monitors/__init__.py, neurosim/monitors/spikemonitor.py, tests/test_spikemonitor.py
+**Commit**: Add SpikeMonitor for recording neuron spikes
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError for monitors), PASS on current state

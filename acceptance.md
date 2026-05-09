@@ -120,3 +120,15 @@
 - [x] Refractory period prevents spiking for a specified duration
 - [x] Method parameter selects integration method (default 'euler')
 - [x] NeuronGroup participates in network simulation with proper scheduling
+
+## Task 11: Spike Monitoring
+
+### Acceptance Criteria
+- [x] SpikeMonitor records spikes from a NeuronGroup
+- [x] i property returns array of neuron indices that spiked
+- [x] t property returns array of spike times
+- [x] count property returns spike count per neuron
+- [x] num_spikes property returns total number of spikes
+- [x] SpikeMonitor updates during network simulation
+- [x] Can record from specific neurons via record parameter
+- [x] Data is correctly accumulated across multiple timesteps
