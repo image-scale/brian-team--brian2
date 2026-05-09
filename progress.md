@@ -34,3 +34,10 @@
 **Commit**: Add base classes for simulation objects with tracking, naming, and scheduling
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state (ImportError for Trackable/Nameable/SimObject), PASS on current state
+
+## Round 6
+**Task**: Task 6 — Implement the network that manages simulation runs
+**Files created**: neurosim/core/network.py, tests/test_network.py
+**Commit**: Add Network class for managing simulation runs with scheduling and time tracking
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for Network), PASS on current state

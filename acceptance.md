@@ -60,3 +60,15 @@
 - [x] Objects can be associated with a clock
 - [x] Objects have unique identifiers for tracking
 - [x] Objects can be scheduled at specific phases (start, groups, thresholds, resets, end)
+
+## Task 6: Network for Simulation Runs
+
+### Acceptance Criteria
+- [x] Network can be created with a name and optional list of objects
+- [x] Objects can be added and removed from the network
+- [x] Network.run(duration) simulates for the specified duration
+- [x] Objects are updated in order: schedule phase, then order, then name
+- [x] Network tracks current simulation time as a Quantity
+- [x] Network.stop() halts the simulation
+- [x] before_run and after_run lifecycle methods are called on objects
+- [x] Inactive objects are not updated during simulation

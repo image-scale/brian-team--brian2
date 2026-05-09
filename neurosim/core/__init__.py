@@ -4,6 +4,7 @@ Core components for the neural simulator.
 
 from .clocks import Clock, defaultclock
 from .base import Trackable, Nameable, SimObject, SCHEDULE_PHASES
+from .network import Network
 
 __all__ = [
     'Clock',
@@ -12,4 +13,5 @@ __all__ = [
     'Nameable',
     'SimObject',
     'SCHEDULE_PHASES',
+    'Network',
 ]

@@ -166,6 +166,13 @@ class Clock:
         """
         return abs(self._t - other._t) < self.epsilon_dt * self._dt
 
+    @property
+    def running(self):
+        """Whether the clock has more steps to execute."""
+        if self._i_end is None:
+            return True
+        return self._timestep < self._i_end
+
     def __repr__(self):
         return f"Clock(dt={self._dt*1000:.4f}*ms, name='{self._name}')"
 
