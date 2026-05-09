@@ -42,11 +42,21 @@
 ## Task 4: Simulation Clocks
 
 ### Acceptance Criteria
-- [ ] Clock tracks current time and timestep number
-- [ ] Clock has configurable dt (time step size) defaulting to 0.1 ms
-- [ ] Clock can advance time by one dt and increment timestep
-- [ ] Clock can be set to run from start time to end time
-- [ ] Clock raises StopIteration when end time is reached
-- [ ] A global defaultclock is available for convenience
-- [ ] Multiple clocks can coexist with different dt values
-- [ ] Clock time has proper units (seconds)
+- [x] Clock tracks current time and timestep number
+- [x] Clock has configurable dt (time step size) defaulting to 0.1 ms
+- [x] Clock can advance time by one dt and increment timestep
+- [x] Clock can be set to run from start time to end time
+- [x] Clock raises StopIteration when end time is reached
+- [x] A global defaultclock is available for convenience
+- [x] Multiple clocks can coexist with different dt values
+- [x] Clock time has proper units (seconds)
+
+## Task 5: Base Classes for Simulation Objects
+
+### Acceptance Criteria
+- [x] Nameable mixin provides automatic or custom naming for objects
+- [x] Names are unique within a simulation context
+- [x] SimObject base class provides common functionality for all simulation objects
+- [x] Objects can be associated with a clock
+- [x] Objects have unique identifiers for tracking
+- [x] Objects can be scheduled at specific phases (start, groups, thresholds, resets, end)

@@ -20,3 +20,17 @@
 **Commit**: Add a logging and preferences system for configuring simulator behavior
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError for neurosim.utils), PASS on current state
+
+## Round 4
+**Task**: Task 4 — Implement simulation clocks
+**Files created**: neurosim/core/clocks.py, tests/test_clocks.py
+**Commit**: Add simulation clocks for managing time stepping during neural network simulation
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for Clock), PASS on current state
+
+## Round 5
+**Task**: Task 5 — Implement base classes for simulation objects
+**Files created**: neurosim/core/base.py, tests/test_base.py
+**Commit**: Add base classes for simulation objects with tracking, naming, and scheduling
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state (ImportError for Trackable/Nameable/SimObject), PASS on current state
