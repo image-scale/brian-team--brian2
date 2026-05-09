@@ -17,6 +17,6 @@ Implement the neural simulator in dependency order. Start with the units system 
 - [x] Task 11: Implement spike monitoring to record when neurons fire (spike monitor + tests)
 - [x] Task 12: Implement state monitoring to record neuron variables over time (state monitor + tests)
 - [x] Task 13: Implement synaptic connections between neuron groups (synapses + tests)
-- [>] Task 14: Implement spike generator groups that produce spikes at specified times (spike generator + tests)
-- [ ] Task 15: Implement Poisson spike generators for random input (poisson group + tests)
+- [x] Task 14: Implement spike generator groups that produce spikes at specified times (spike generator + tests)
+- [>] Task 15: Implement Poisson spike generators for random input (poisson group + tests)
 - [ ] Task 16: Implement timed arrays for time-varying input signals (timed array + tests)

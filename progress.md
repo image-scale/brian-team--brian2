@@ -90,3 +90,10 @@
 **Commit**: Add Synapses for connecting neuron groups with pre-synaptic effects
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError for synapses), PASS on current state
+
+## Round 14
+**Task**: Task 14 — Implement spike generator groups
+**Files created**: neurosim/groups/spikegeneratorgroup.py, tests/test_spikegeneratorgroup.py
+**Commit**: Add SpikeGeneratorGroup for producing spikes at specified times
+**Acceptance**: 7/7 criteria met
+**Verification**: tests FAIL on previous state (ImportError for SpikeGeneratorGroup), PASS on current state

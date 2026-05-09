@@ -156,3 +156,14 @@
 - [x] Synapses participate in network simulation
 - [x] Source/target indices accessible via i and j properties
 - [x] Synaptic variables can be defined in equations
+
+## Task 14: SpikeGeneratorGroup
+
+### Acceptance Criteria
+- [x] SpikeGeneratorGroup produces spikes at specified times
+- [x] indices and times arrays specify which neurons spike when
+- [x] Can be used as input to Synapses
+- [x] Participates in network simulation
+- [x] Spikes occur at correct times during simulation
+- [x] Multiple spikes per neuron supported
+- [x] Works with any clock dt
