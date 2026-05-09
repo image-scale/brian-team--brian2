@@ -167,3 +167,14 @@
 - [x] Spikes occur at correct times during simulation
 - [x] Multiple spikes per neuron supported
 - [x] Works with any clock dt
+
+## Task 15: PoissonGroup
+
+### Acceptance Criteria
+- [x] PoissonGroup generates random Poisson-distributed spikes
+- [x] rates parameter specifies firing rate(s) in Hz
+- [x] Can specify different rates for different neurons
+- [x] Produces correct average spike rate over time
+- [x] Can be used as input to Synapses
+- [x] Participates in network simulation
+- [x] Rates can be changed during simulation

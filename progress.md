@@ -97,3 +97,10 @@
 **Commit**: Add SpikeGeneratorGroup for producing spikes at specified times
 **Acceptance**: 7/7 criteria met
 **Verification**: tests FAIL on previous state (ImportError for SpikeGeneratorGroup), PASS on current state
+
+## Round 15
+**Task**: Task 15 — Implement Poisson spike generators
+**Files created**: neurosim/groups/poissongroup.py, tests/test_poissongroup.py
+**Commit**: Add PoissonGroup for generating random Poisson-distributed spikes
+**Acceptance**: 7/7 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError for poissongroup), PASS on current state
