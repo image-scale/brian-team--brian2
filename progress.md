@@ -48,3 +48,10 @@
 **Commit**: Add equation parsing for differential equations, parameters, and subexpressions
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for equations module), PASS on current state
+
+## Round 8
+**Task**: Task 8 — Implement state variables system
+**Files created**: neurosim/core/variables.py, tests/test_variables.py
+**Commit**: Add state variables system for managing neuron and synapse state
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for variables), PASS on current state

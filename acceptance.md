@@ -84,3 +84,15 @@
 - [x] Expression objects store the right-hand side with identifiers
 - [x] Equations container provides access by variable name
 - [x] Invalid equation syntax raises EquationError
+
+## Task 8: State Variables System
+
+### Acceptance Criteria
+- [x] Variable base class stores name, dimensions, dtype, and flags
+- [x] Constant class stores immutable scalar values
+- [x] ArrayVariable stores numpy arrays with get/set methods
+- [x] Variables container manages multiple variables
+- [x] Variables can be added by type (constant, array)
+- [x] Variable dimensions match physical units
+- [x] Scalar vs. vector variables are distinguished
+- [x] Read-only variables reject set operations
