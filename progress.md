@@ -76,3 +76,10 @@
 **Commit**: Add SpikeMonitor for recording neuron spikes
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError for monitors), PASS on current state
+
+## Round 12
+**Task**: Task 12 — Implement state monitoring
+**Files created**: neurosim/monitors/statemonitor.py, tests/test_statemonitor.py
+**Commit**: Add StateMonitor for recording state variables over time
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for StateMonitor), PASS on current state

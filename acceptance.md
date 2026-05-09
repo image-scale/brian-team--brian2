@@ -132,3 +132,15 @@
 - [x] SpikeMonitor updates during network simulation
 - [x] Can record from specific neurons via record parameter
 - [x] Data is correctly accumulated across multiple timesteps
+
+## Task 12: State Monitoring
+
+### Acceptance Criteria
+- [x] StateMonitor records state variables from a Group
+- [x] record parameter specifies which neurons to record
+- [x] Variables parameter specifies which state variables to record
+- [x] Recorded values accessible via monitor.variable_name
+- [x] t property returns array of recording times
+- [x] StateMonitor updates during network simulation
+- [x] Can record multiple variables simultaneously
+- [x] Data has correct dimensions (neurons x timesteps)
