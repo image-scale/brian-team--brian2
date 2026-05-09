@@ -144,3 +144,15 @@
 - [x] StateMonitor updates during network simulation
 - [x] Can record multiple variables simultaneously
 - [x] Data has correct dimensions (neurons x timesteps)
+
+## Task 13: Synapses
+
+### Acceptance Criteria
+- [x] Synapses connect pre and post neuron groups
+- [x] connect() method creates connections (one-to-one, all-to-all, probabilistic)
+- [x] Pre-synaptic spikes trigger on_pre code
+- [x] Synaptic weights can be defined and modified
+- [x] Synaptic delays are supported
+- [x] Synapses participate in network simulation
+- [x] Source/target indices accessible via i and j properties
+- [x] Synaptic variables can be defined in equations

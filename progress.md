@@ -83,3 +83,10 @@
 **Commit**: Add StateMonitor for recording state variables over time
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for StateMonitor), PASS on current state
+
+## Round 13
+**Task**: Task 13 — Implement synaptic connections
+**Files created**: neurosim/synapses/__init__.py, neurosim/synapses/synapses.py, tests/test_synapses.py
+**Commit**: Add Synapses for connecting neuron groups with pre-synaptic effects
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError for synapses), PASS on current state
