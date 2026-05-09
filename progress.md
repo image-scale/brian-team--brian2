@@ -104,3 +104,10 @@
 **Commit**: Add PoissonGroup for generating random Poisson-distributed spikes
 **Acceptance**: 7/7 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError for poissongroup), PASS on current state
+
+## Round 16
+**Task**: Task 16 — Implement timed arrays for time-varying input signals
+**Files created**: neurosim/input/__init__.py, neurosim/input/timedarray.py, tests/test_timedarray.py
+**Commit**: Add TimedArray for time-varying input signals in neural simulations
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError for timedarray), PASS on current state

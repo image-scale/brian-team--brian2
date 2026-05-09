@@ -178,3 +178,13 @@
 - [x] Can be used as input to Synapses
 - [x] Participates in network simulation
 - [x] Rates can be changed during simulation
+
+## Task 16: TimedArray
+
+### Acceptance Criteria
+- [x] TimedArray stores time-varying values
+- [x] Can be called as function of time: arr(t)
+- [x] Values interpolate or step between defined time points
+- [x] Works with units (values and times)
+- [x] Can be used in NeuronGroup equations
+- [x] Supports 1D (scalar over time) and 2D (per-neuron values) arrays
