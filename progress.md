@@ -55,3 +55,10 @@
 **Commit**: Add state variables system for managing neuron and synapse state
 **Acceptance**: 8/8 criteria met
 **Verification**: tests FAIL on previous state (ImportError for variables), PASS on current state
+
+## Round 9
+**Task**: Task 9 — Implement the group base class
+**Files created**: neurosim/groups/__init__.py, neurosim/groups/group.py, tests/test_group.py
+**Commit**: Add Group base class with state variable access, attribute access, and indexing
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state (ImportError for groups), PASS on current state

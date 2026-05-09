@@ -12,6 +12,7 @@ from .core import (
     get_dimensions,
     is_dimensionless,
     have_same_dimensions,
+    fail_for_dimension_mismatch,
     check_units,
 )
 
@@ -85,6 +86,7 @@ __all__ = [
     'get_dimensions',
     'is_dimensionless',
     'have_same_dimensions',
+    'fail_for_dimension_mismatch',
     'check_units',
     # Base units
     'second', 'metre', 'meter', 'kilogram', 'ampere', 'amp', 'kelvin', 'mole', 'candela',

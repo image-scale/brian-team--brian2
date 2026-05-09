@@ -19,6 +19,7 @@ __all__ = [
     'get_dimensions',
     'is_dimensionless',
     'have_same_dimensions',
+    'fail_for_dimension_mismatch',
     'check_units',
 ]
 
@@ -222,6 +223,27 @@ def _fail_for_dimension_mismatch(obj1, obj2=None, error_message=None):
         else:
             raise DimensionMismatchError(error_message, dim1, dim2)
     return dim1, dim2
+
+
+def fail_for_dimension_mismatch(obj1, obj2=None, error_message=None):
+    """
+    Check that two objects have matching dimensions.
+
+    Parameters
+    ----------
+    obj1 : Quantity or number
+        First object to check.
+    obj2 : Quantity or number, optional
+        Second object to check. If None, checks that obj1 is dimensionless.
+    error_message : str, optional
+        Custom error message.
+
+    Raises
+    ------
+    DimensionMismatchError
+        If the dimensions don't match.
+    """
+    return _fail_for_dimension_mismatch(obj1, obj2, error_message)
 
 
 # Lists of numpy ufuncs for proper handling

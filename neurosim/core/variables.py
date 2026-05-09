@@ -159,13 +159,21 @@ class ArrayVariable(Variable):
         Whether the value is read-only. Defaults to False.
     scalar : bool, optional
         Whether this is a scalar (1-element array). Defaults to False.
+    values : array-like, optional
+        Initial values for the array.
     """
 
     def __init__(self, name, size, dimensions=DIMENSIONLESS, owner=None,
-                 dtype=None, constant=False, read_only=False, scalar=False):
+                 dtype=None, constant=False, read_only=False, scalar=False, values=None):
         self.size = size
         dtype = dtype if dtype is not None else np.float64
-        self._data = np.zeros(size, dtype=dtype)
+
+        if values is not None:
+            self._data = np.asarray(values, dtype=dtype)
+            if len(self._data) != size:
+                raise ValueError(f"Initial values length {len(self._data)} does not match size {size}")
+        else:
+            self._data = np.zeros(size, dtype=dtype)
 
         super().__init__(name, dimensions=dimensions, owner=owner, dtype=dtype,
                         scalar=scalar, constant=constant, read_only=read_only)
@@ -357,9 +365,7 @@ class Variables(Mapping):
         dtype = dtype if dtype else self.default_dtype
         var = ArrayVariable(name, size, dimensions=dimensions, owner=self.owner,
                            dtype=dtype, constant=constant, read_only=read_only,
-                           scalar=scalar)
-        if values is not None:
-            var.set_value(values)
+                           scalar=scalar, values=values)
 
         self._variables[name] = var
         logger.debug(f"Added array '{name}' with size {size}")

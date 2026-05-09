@@ -96,3 +96,15 @@
 - [x] Variable dimensions match physical units
 - [x] Scalar vs. vector variables are distinguished
 - [x] Read-only variables reject set operations
+
+## Task 9: Group Base Class
+
+### Acceptance Criteria
+- [x] Group inherits from SimObject and owns variables
+- [x] Attribute access to state variables (group.v, group.v_)
+- [x] Setting variables via attribute (group.v = value)
+- [x] Indexing support (group[0], group[0:10])
+- [x] Group has N property for size
+- [x] Variables created from equations
+- [x] Unit checking on variable assignment
+- [x] Read-only variables cannot be set via attribute
